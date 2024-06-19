@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prework Study Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      header img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      h1 {
+        margin: 0;
+      }
+      h2 {
+        margin: 10px 0;
+      }
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      ul li {
+        background: #e2e2e2;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>First contribution</h1>
+      <img
+        src="https://i.etsystatic.com/13042638/r/il/ade0bc/3104776190/il_fullxfull.3104776190_c1xq.jpg"
+        alt="Profile image of cat wearing a bow tie."
+      />
+      <h2>✨ Let's start ✨</h2>
+    </header>
+    <main>
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <ul>
+          <li>The head element contains information about the webpage.</li>
+          <li>
+            The body element represents the visible content shown to the user.
+          </li>
+          <li>
+            HTML is one of the three cornerstone languages used in web
+            development.
+          </li>
+          <li>
+            Metadata helps the browser render the page correctly and is not
+            visible to users.
+          </li>
+          <li>Attributes define additional information about an element.</li>
+          <li>The title element defines the title for a webpage.</li>
+          <li>
+            The style element defines the CSS styles associated with a website.
+          </li>
+          <li>
+            The link element connects an external resource to the HTML document.
+          </li>
+          <li>
+            The meta element defines metadata such as the character set,
+            description, keywords, author, and viewport.
+          </li>
+          <li>
+            The script element embeds client-side scripts in the HTML document.
+          </li>
+        </ul>
+      </section>
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>CSS is used to add style to our webpage.</li>
+          <li>CSS defines colors, layout, and organization.</li>
+          <li>
+            There are three ways to style a webpage using CSS: inline, internal,
+            and external.
+          </li>
+          <li>Inline styles apply to a specific HTML tag.</li>
+          <li>
+            Internal styles are defined in the head section of the HTML file.
+          </li>
+          <li>
+            External CSS is the most common and allows design changes easier by
+            keeping all rules in a separate file.
+          </li>
+          <li>Declarations contain the CSS property and its value.</li>
+          <li>
+            The margin property sets space around the outside of an element.
+          </li>
+          <li>
+            The padding property adds space around the content inside an
+            element.
+          </li>
+        </ul>
+      </section>
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li>git status: checks the current branch.</li>
+          <li>
+            git checkout -b branch-name: creates and switches to a new branch.
+          </li>
+          <li>git add -A: stages all changes in the working directory.</li>
+          <li>git commit -m "message": commits changes with a message.</li>
+        </ul>
+      </section>
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>A variable is a named container that stores data.</li>
+          <li>Control flow is the order in which a computer executes code.</li>
+          <li>
+            The const keyword creates variables that cannot be reassigned.
+          </li>
+          <li>The = operator assigns data to a variable.</li>
+          <li>console.log outputs a message to the web console.</li>
+          <li>An if statement introduces decision-making into code.</li>
+          <li>
+            A for loop executes a block of code repeatedly based on a condition.
+          </li>
+          <li>Functions are created using the function keyword.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Do Not Repeat Yourself (DRY) is a coding principle that encourages code
+        reuse to reduce redundancy and maintainability issues.
+      </p>
+    </footer>
+    <script>
+      const topics = ["HTML", "CSS", "Git", "JavaScript"];
+      for (let i = 0; i < topics.length; i++) {
+        console.log(`Let's study ${topics[i]}`);
+      }
+
+      function selectTopic(topic) {
+        if (topics.includes(topic)) {
+          console.log(`You selected ${topic}`);
+        } else {
+          console.log("Please select a valid topic.");
+        }
+      }
+
+      selectTopic("JavaScript");
+    </script>
+  </body>
+</html>
